@@ -3,15 +3,17 @@
   import GameInfo from "./GameInfo.svelte";
 
   export let page
+  export let goHome
+  let elapsed = 0
 </script>
 
 <main>
-  <GameInfo/>
-  <GameGrid/>
+  <GameInfo {elapsed}/>
+  <GameGrid bind:elapsed {goHome}/>
 
   <button 
   class="btn itim-regular"
-  on:click={()=>page='title'}>Back to Home</button>
+  on:click={goHome}>그만하기</button>
 </main>
 
 <style>

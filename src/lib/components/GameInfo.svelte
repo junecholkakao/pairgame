@@ -1,16 +1,20 @@
+<script>
+  export let elapsed = 0
+</script>
+
 <header class="game-info itim-regular">
   <dl>
-    <div class="score">
+    <!-- <div class="score">
       <dt>Score</dt>
       <dd>999,999</dd>
     </div>
     <div class="round">
       <dt>Round</dt>
       <dd>99</dd>
-    </div>
+    </div> -->
     <div class="time">
-      <dt>Time</dt>
-      <dd>60</dd>
+      <dt>시간</dt>
+      <dd>{elapsed}</dd>
     </div>
   </dl>
 </header>
@@ -23,18 +27,22 @@
     top: 0;
     width: 100vw;
     dl {
-      display: flex;
-      justify-content: space-between;
+      display: block;
+      margin: 10px auto;
       padding: 10px 30px;
       dt, dd {
-        font-size: min(2vw, 24px)
+        font-size: min(10vw, 44px);
       }
-      .round {
+      .round , .time {
+        text-align: center;
         color: #fff;
         -webkit-text-stroke: 6px rgba(0,0,0,1);
         paint-order: stroke fill;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
       }
-      .score, .time {
+      .score{
         color: #fff;
         text-shadow: 2px 2px #000
       }
