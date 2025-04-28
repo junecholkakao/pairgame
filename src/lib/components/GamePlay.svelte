@@ -10,7 +10,7 @@
   <GameGrid/>
 
   <button 
-  hidden
+  class="btn itim-regular"
   on:click={()=>page='title'}>Back to Home</button>
 </main>
 

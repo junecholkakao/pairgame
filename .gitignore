@@ -1,0 +1,4 @@
+/node_modules/
+
+# use pnpm, not npm
+package-lock.json
