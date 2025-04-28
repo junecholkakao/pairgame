@@ -10,7 +10,7 @@ body {
   display: grid;
   height: 100vh;
   place-items: center;
-  background-image: url('images/flower_field.png');
+  background-image: url('images/flower_field.jpg');
   background-size: cover;
   background-position: center;
 
