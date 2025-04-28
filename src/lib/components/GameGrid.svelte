@@ -157,19 +157,18 @@
 
 
 
-<ul class="game-grid">
+<div class="game-grid">
   {#each cards as card, i}
-  <li
+  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div
+    on:click={()=>flipCard(i)} 
     class={(card.flipped ? "card " : "card hidden ") + (card.matched ? "green_bg": "")}
     >
-    <button
-    on:click={()=>flipCard(i)} 
-      >
       <img src={card_data[card.id].imgUrl} alt="">
-    </button>
-  </li>    
+  </div>    
   {/each}
-</ul>
+</div>
 <br>
 {#if isGameCleared}
   <Modal {restart} {milliseconds} {goHome}/>
@@ -181,10 +180,10 @@
   .game-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
     list-style-type: none;
     grid-gap: 2%;
-    padding: 10px;
+    padding: 0;
     margin-bottom: 40px;
 
     .card {
