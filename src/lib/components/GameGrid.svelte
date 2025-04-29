@@ -183,7 +183,7 @@
     grid-template-rows: auto;
     list-style-type: none;
     grid-gap: 2%;
-    padding: 0;
+    padding: 10px;
     margin-bottom: 40px;
 
     .card {
