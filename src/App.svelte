@@ -3,7 +3,7 @@
   import GameScore from "./lib/components/GameScore.svelte";
   import GameTitle from "./lib/components/GameTitle.svelte";
 
-  const gameTitle = "폭삭 속았수다"
+  const gameTitle = "폭싹 속았수다"
 </script>
 
 <svelte:head>

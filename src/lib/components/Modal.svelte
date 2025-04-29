@@ -6,7 +6,7 @@
 
 <div class="modal">
   <div class="modal-container">
-    <h1>폭삭 속았수다!</h1>
+    <h1>폭싹 속았수다!</h1>
     <p class="bonus-score-title">걸린 시간</p>
     <p class="bonus-score">{milliseconds/1000}</p>
     <button class="btn next" on:click={restart}>다시</button>
